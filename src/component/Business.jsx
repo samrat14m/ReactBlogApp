@@ -1,18 +1,18 @@
 import React, { useContext } from "react";
-import { TechContext } from "../contexts/TechContext";
+import { BusinessContext } from "../contexts/BusinessContext";
 
-const Technology = () => {
-  const { techData } = useContext(TechContext);
+const Business = () => {
+  const { businessData } = useContext(BusinessContext);
   return (
     <div className="Container">
-      <h1>Technology</h1>
-      {techData.map((blog) => {
+      <h1>Business</h1>
+      {businessData.map((blog) => {
         return (
           <div className="BlogList">
             <img
               src={blog.urlToImage}
               alt=""
-              style={{ height: "auto", width: "250px" }}
+              style={{ height: "auto", width: "250px", marginRight: "1rem" }}
             />
             <div>
               <a href={blog.url}>
@@ -31,4 +31,4 @@ const Technology = () => {
   );
 };
 
-export default Technology;
+export default Business;

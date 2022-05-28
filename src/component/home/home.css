@@ -1,0 +1,22 @@
+
+.homeTop{
+    display: flex;
+    width: 60%;
+    margin: 3vh 20%;
+    margin-bottom: 10vh;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.picTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeList{
+    display: flex;
+    width:80%;
+    margin: 2vh 10%;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 2px 2px lemonchiffon;
+}
+
